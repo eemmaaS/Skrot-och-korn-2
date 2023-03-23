@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body background="images/seal.jpeg">
+    <div style="background-color:darkmagenta; margin: 30px; padding: 30px">
+        <h1>Vi som jobbar på Skrot och Korn AB är...</h1>
+        <ul>
+            <li><a href = "index.html">Startsida</a></li>
+            <li><a href = "produktsida.html">Produktsida</a></li>
+            <li><a href = "kontaktaoss.html">Kontakt</a></li>
+            <li><a href = "kontaktformulär.html">Kontaktformulär</a></li>
+            <li><a href = "media.html">Media</a></li>
+        </ul>
+    </div>
+    <form action="http://primat.se/services/sendform.aspx?xid=kontaktformulär&xmail=essbp96@hotmail.com" method="post">
+        <h1><u>Kontakta oss</u></h1>
+        <h3>Vänligen fyll i formuläret nedan</h3>
+        <label for="name">Namn:&nbsp;</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="adress">Adress:</label>
+        <input type="text" id="adress" name="adress"><br>
+
+        <label for="email">Email:&nbsp;</label>
+        <input type="text" id="email" name="email"><br>
+
+        <label for="tel">Tel:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" id="tel" name="tel"><br>
+
+        <p>Välj kundtyp:</p>
+        <input type="radio" name="customer" id="private" value="private">
+        <label for="private">Privat</label><br>
+
+        <input type="radio" name="customer" id="company" value="company">
+        <label for="company">Företag</label><br>
+
+        <p>Välj storlek på företaget:</p>
+        <input type="radio" name="size" id="small" value="small">
+        <label for="small">1-100 anställda</label><br>
+
+        <input type="radio" name="size" id="medium" value="medium">
+        <label for="medium">101-1000 anställda</label><br>
+
+        <input type="radio" name="size" id="large" value="large">
+        <label for="large">Mer än 1000 anställda</label><br>
+   
+        <br>
+        <label for="info">Frågor på det?</label><br>
+        <textarea id="questions" rows="5" cols="80" name="questions"></textarea><br>
+
+        <input type="hidden" name="newsletter" value="nej">
+        <input type="checkbox" id="newsletter" name="newsletter" value="ja">
+        <label for="newsletter">Vill du ha nyhetsbrev?</label><br>
+
+        <input type="hidden" name="contacttel" value="nej">
+        <input type="checkbox" id="contacttel" name="contacttel" value="ja">
+        <label for="contacttel">Vill du bli kontaktad via telefon?</label>
+
+        <br><br>
+        <input type="submit" value="Skicka in"><br>
+        
+    </form>
+    <iframe src="copy.html" width="350" height="315"></iframe>
+</body>
+</html>
